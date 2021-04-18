@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App matches snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <header
+      class="sc-hKwCoD jqQDeZ"
+    >
+      <div
+        class="sc-eCImvq eptfEZ"
+      >
+        <div>
+          logo
+        </div>
+        <ul
+          class="sc-bdvvaa hrUNls"
+          data-testid="__menu__"
+        >
+          <li
+            class="sc-gsDJrp kHMaLx"
+            data-testid="__menu-item__"
+          >
+            <svg
+              fill="currentColor"
+              height="17px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+            <span
+              class="sc-dkPtyc kGQHAo"
+            >
+              Navigation One
+            </span>
+          </li>
+          <li
+            class="sc-gsDJrp gULcyh"
+            data-testid="__menu-item__"
+          >
+            <svg
+              fill="currentColor"
+              height="17px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+            <span
+              class="sc-dkPtyc kGQHAo"
+            >
+              Navigation Two
+            </span>
+          </li>
+          <li
+            class="sc-gsDJrp kHMaLx"
+            data-testid="__menu-item__"
+          >
+            <svg
+              fill="currentColor"
+              height="17px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+            <span
+              class="sc-dkPtyc kGQHAo"
+            >
+              Navigation Three
+            </span>
+          </li>
+          <li
+            class="sc-gsDJrp kHMaLx"
+            data-testid="__menu-item__"
+          >
+            <svg
+              fill="currentColor"
+              height="17px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+            <span
+              class="sc-dkPtyc kGQHAo"
+            >
+              Navigation Four
+            </span>
+          </li>
+        </ul>
+        <div>
+          user
+        </div>
+      </div>
+    </header>
+  </div>
+</DocumentFragment>
+`;
