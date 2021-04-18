@@ -35,7 +35,7 @@ exports[`App matches snapshot 1`] = `
               />
             </svg>
             <span
-              class="sc-dkPtyc kGQHAo"
+              class="sc-dkPtyc gTOzwD"
             >
               Navigation One
             </span>
@@ -59,7 +59,7 @@ exports[`App matches snapshot 1`] = `
               />
             </svg>
             <span
-              class="sc-dkPtyc kGQHAo"
+              class="sc-dkPtyc gTOzwD"
             >
               Navigation Two
             </span>
@@ -83,7 +83,7 @@ exports[`App matches snapshot 1`] = `
               />
             </svg>
             <span
-              class="sc-dkPtyc kGQHAo"
+              class="sc-dkPtyc gTOzwD"
             >
               Navigation Three
             </span>
@@ -107,7 +107,7 @@ exports[`App matches snapshot 1`] = `
               />
             </svg>
             <span
-              class="sc-dkPtyc kGQHAo"
+              class="sc-dkPtyc gTOzwD"
             >
               Navigation Four
             </span>

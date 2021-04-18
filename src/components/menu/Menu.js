@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 
 import PropTypes from "prop-types";
 
@@ -7,6 +7,8 @@ import * as Styled from "./__styles__/Menu.styles";
 const Menu = ({ selectedKey, menuItems, onClick }) => {
   const menuRef = useRef(null);
   const menuItemsRef = useRef([]);
+
+  const [visibleKeys, setVisibleKeys] = useState([]);
 
   useLayoutEffect(() => {
     handleResize();
@@ -37,31 +39,32 @@ const Menu = ({ selectedKey, menuItems, onClick }) => {
             return acc + elem.offsetWidth + width;
           }
         }, 0);
-
       if (menuWidth < currentSumWidth) {
-        let i = menuItems.length;
+        let i = menuItems.length,
+          keys = [];
 
         while (menuWidth < currentSumWidth && menuItemsRef.current[i - 1]) {
           currentSumWidth =
             currentSumWidth -
             menuItemsRef.current[i - 1].children[1].offsetWidth;
-          menuItemsRef.current[i - 1].children[1].style.display = "none";
 
+          keys.push((i - 1).toString());
           i--;
         }
-      } else {
-        let j = 0;
 
-        while (
-          menuWidth > currentSumWidth + 150 &&
-          j < menuItems.length &&
-          menuItemsRef.current[menuItems.length - 1].children[1].style
-            .display === "none"
-        ) {
-          if (menuItemsRef.current[j].children[1].style.display === "none") {
-            menuItemsRef.current[j].children[1].style.display = "inline-block";
+        setVisibleKeys(keys);
+      } else {
+        let j = 0,
+          keys = [];
+
+        while (menuWidth > currentSumWidth + 120 && j < menuItems.length) {
+          if (menuItemsRef.current[j].children[1].offsetWidth === 0) {
+            keys.push(j.toString());
             currentSumWidth =
               currentSumWidth + menuItemsRef.current[j].children[1].offsetWidth;
+            setVisibleKeys((prevState) =>
+              prevState.filter((item) => item !== j.toString())
+            );
           }
           j++;
         }
@@ -83,7 +86,9 @@ const Menu = ({ selectedKey, menuItems, onClick }) => {
             onClick={_onMenuItemClick(item.key)}
           >
             {item.icon}
-            <Styled.Title>{item.title}</Styled.Title>
+            <Styled.Title $isVisible={!visibleKeys.includes(i.toString())}>
+              {item.title}
+            </Styled.Title>
           </Styled.MenuItem>
         ))}
     </Styled.Root>

@@ -10,22 +10,32 @@ const getInstance = (props = {}, children = null) => (
 );
 
 describe("Menu", () => {
-  it("matches snapshot", () => {
-    const { asFragment } = render(getInstance());
-    expect(asFragment()).toMatchSnapshot();
+  const menuItems = [
+    { key: "navigation_1", title: "navigation_1", icon: <DeleteIcon /> },
+    { key: "navigation_2", title: "navigation_2", icon: <DeleteIcon /> },
+    { key: "navigation_3", title: "navigation_3", icon: <DeleteIcon /> },
+    { key: "navigation_4", title: "navigation_4", icon: <DeleteIcon /> },
+  ];
+
+  describe("matches snapshot", () => {
+    const data = [
+      { title: "with no data" },
+      { title: "with menuItems", props: { menuItems } },
+    ];
+
+    data.forEach(({ title, props }) => {
+      it(title, () => {
+        const { asFragment } = render(getInstance(props));
+        expect(asFragment()).toMatchSnapshot();
+      });
+    });
   });
 
-  it("renders Menu Items", () => {
-    const { getByText } = render(
-      getInstance({
-        menuItems: [
-          { key: "foo", title: "Foo", icon: <DeleteIcon /> },
-          { key: "bar", title: "Bar", icon: <DeleteIcon /> },
-        ],
-      })
-    );
-    expect(getByText("Bar")).toBeInTheDocument();
-    expect(getByText("Foo")).toBeInTheDocument();
+  it("renders order menu items", () => {
+    const { getAllByRole } = render(getInstance({ menuItems }));
+    menuItems.map((item, i) => {
+      expect(getAllByRole("listitem")[i]).toHaveTextContent(item.title);
+    });
   });
 
   it("renders selected menu item", () => {

@@ -32,5 +32,5 @@ export const MenuItem = styled.li`
 
 export const Title = styled.span`
   font-size: 14px;
-  display: inline-block;
+  display: ${({ $isVisible }) => ($isVisible ? "inline-block" : "none")};
 `;

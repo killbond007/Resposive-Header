@@ -1,6 +1,145 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Menu matches snapshot 1`] = `
+exports[`Menu matches snapshot with menuItems 1`] = `
+<DocumentFragment>
+  .c0 {
+  width: 100%;
+  line-height: 46px;
+  height: 48px;
+  border: 0;
+  border-bottom: 1px solid #f0f0f0;
+  box-shadow: none;
+  text-align: left;
+  list-style: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: -1px 20px 0;
+  cursor: pointer;
+  color: #000000d9;
+}
+
+.c2 {
+  font-size: 14px;
+  display: inline-block;
+}
+
+<ul
+    class="c0"
+    data-testid="__menu__"
+  >
+    <li
+      class="c1"
+      data-testid="__menu-item__"
+    >
+      <svg
+        fill="currentColor"
+        height="17px"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+      <span
+        class="c2"
+      >
+        navigation_1
+      </span>
+    </li>
+    <li
+      class="c1"
+      data-testid="__menu-item__"
+    >
+      <svg
+        fill="currentColor"
+        height="17px"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+      <span
+        class="c2"
+      >
+        navigation_2
+      </span>
+    </li>
+    <li
+      class="c1"
+      data-testid="__menu-item__"
+    >
+      <svg
+        fill="currentColor"
+        height="17px"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+      <span
+        class="c2"
+      >
+        navigation_3
+      </span>
+    </li>
+    <li
+      class="c1"
+      data-testid="__menu-item__"
+    >
+      <svg
+        fill="currentColor"
+        height="17px"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+      <span
+        class="c2"
+      >
+        navigation_4
+      </span>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
+
+exports[`Menu matches snapshot with no data 1`] = `
 <DocumentFragment>
   .c0 {
   width: 100%;
